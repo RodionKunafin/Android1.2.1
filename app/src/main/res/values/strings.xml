@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Android 1.2.1</string>
+    <string name="Subscription">Подписка</string>
+    <string name="Username">Имя пользователя</string>
+    <string name="eMail">Электронная почта</string>
+    <string name="btnOk">OK</string>
+    <string name="btnRemove">Удалить</string>
+
+</resources>
