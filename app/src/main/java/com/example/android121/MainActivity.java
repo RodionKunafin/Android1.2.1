@@ -9,9 +9,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    TextView name;
-    TextView mail;
-
 
 
     @Override
@@ -29,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 conclusion.setText("Подписка на рассылку успешно оформлена для пользователя"
-                        +name+ "на электронный адрес"+mail);
+                        +name.getText()+ "на электронный адрес"+mail.getText());
 
             }
         });
