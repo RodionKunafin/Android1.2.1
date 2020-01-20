@@ -5,6 +5,8 @@
     <string name="eMail">Электронная почта</string>
     <string name="btnOk">OK</string>
     <string name="btnRemove">Удалить</string>
-   
+    <string name="conclusion_format">Подписка на рассылку успешно оформлена для пользователя
+                        %1$s на электронный адрес %2$s</string>
+
 
 </resources>

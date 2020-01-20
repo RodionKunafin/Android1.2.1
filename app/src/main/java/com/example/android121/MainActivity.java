@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
             @SuppressLint( "SetTextI18n" )
             @Override
             public void onClick(View view) {
-                conclusion.setText("Подписка на рассылку успешно оформлена для пользователя"
-                        +name.getText()+ "на электронный адрес"+mail.getText());
+                String conclusionString = getString(R.string.conclusion_format, name.getText(), mail.getText());
+                conclusion.setText(conclusionString);
 
             }
         });
@@ -39,36 +39,6 @@ public class MainActivity extends AppCompatActivity {
                 conclusion.setText(null);
 
     }
-
-     /*TextView conclusion =  findViewById(R.id.conclusion);
-     TextView name =  findViewById(R.id.name);
-     TextView mail =  findViewById(R.id.mail);
-    public void onClickButtonOk (View view){
-        TextView btnOk = findViewById(R.id.btnOk);
-        btnOk.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint( "SetTextI18n" )
-            @Override
-            public void onClick(View view) {
-                conclusion.setText("Подписка на рассылку успешно оформлена для пользователя"
-                        +name+ "на электронный адрес"+mail);
-
-            }
-        });
-
-    }*/
-    /*public void onClickButtonRemove (View view){
-        TextView btnRemove = findViewById(R.id.btnRemove);
-        btnRemove.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mail.setText(null);
-                name.setText(null);
-                conclusion.setText(null);
-
-
-            }
-        });
-    }*/
 
 });
 
